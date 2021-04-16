@@ -68,7 +68,7 @@ func New(config types.Config, embeddedStorage bool) (*Calcium, error) {
 		log.Warn("[Calcium] SCM not set, build API disabled")
 	}
 	if err != nil {
-		logger.Errorf("[Calcium] SCAM failed: %+v", err)
+		logger.Errorf("[Calcium] SCM failed: %+v", err)
 		return nil, errors.WithStack(err)
 	}
 
